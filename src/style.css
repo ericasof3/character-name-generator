@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #26212b;
+  color: #f3efff;
+  margin: 0;
+  font-family: "Lora", serif;
+}
+
+a {
+  color: #d9ccff;
+  margin: 0 3px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 42px;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  background-color: #48495b;
+  border: 1px solid #656787;
+  border-radius: 12px;
+  padding: 30px 0 0 0;
+  overflow: hidden;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px 0 30px 0;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+
+.tips {
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.tips-list {
+  margin-top: 14px;
+}
+
+.tips ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.tips li {
+  margin-bottom: 8px;
+}
+
+.examples {
+  opacity: 70%;
+  font-size: 13px;
+}
+
+.chat-form-wrapper {
+  width: 100%;
+}
+
+.chat {
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  border: 1px solid #656787;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  background-color: #26212b;
+}
+
+form {
+  width: 100%;
+  padding: 18px;
+  background-color: #1a1620;
+  border: 1px solid #656787;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+}
+
+.instructions {
+  flex: 1;
+  height: 44px;
+  padding: 0 14px;
+  background-color: #48495b;
+  color: #f3efff;
+  border: 1.5px solid #967beb;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-family: "Lora", serif;
+}
+
+.instructions::placeholder {
+  color: #d8d1ee;
+}
+
+.submit-button {
+  height: 44px;
+  padding: 0 18px;
+  border: 1.5px solid #967beb;
+  border-radius: 0 10px 10px 0;
+  background-color: #947ded;
+  color: #f3efff;
+  cursor: pointer;
+  font-family: "Lora", serif;
+}
+
+footer {
+  border-top: 1px solid #656787;
+  min-height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}

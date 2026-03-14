@@ -3,49 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Character Name Generator</title>
   </head>
+
   <body>
     <header>
       <h1>Character Name Generator</h1>
     </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a character description"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Name:
-        <br />
-        Ethymology:
-        <br />
-        Reasoning:
-      </div>
-    </main>
+    <div class="container">
+      <main>
+        <h2>Describe your character</h2>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/ericasof3" target="_blank">Érica Lemos</a> and
-      is
-      <a
-        href="https://github.com/ericasof3/character-name-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://character-name-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+        <div class="tips">
+          <div>
+            Provide any information you have about your character so the name
+            can better match them.
+            <br />
+            This might include their gender (if any), personality, the time
+            period they live in, their cultural background, profession, or role
+            in the story.
+          </div>
+
+          <div class="tips-list">You can also specify:</div>
+
+          <ul>
+            <li>A culture or region the name should draw inspiration from</li>
+
+            <li>
+              Themes or elements you want reflected in the name
+              <span class="examples"
+                >(for example: nature, mythology, history, or symbolism)</span
+              >
+            </li>
+
+            <li>
+              Name format preferences
+              <span class="examples"
+                >(such as preferred length—short, medium, long, or a specific
+                number of letters/syllables—and whether to include or avoid
+                special characters like accents, apostrophes, or hyphens)</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="chat-form-wrapper">
+          <div class="chat"></div>
+
+          <form id="character-name-generator-form">
+            <div class="form-container">
+              <input
+                type="text"
+                placeholder="Describe your character..."
+                required
+                autocomplete="off"
+                class="instructions"
+              />
+
+              <input type="submit" value="Generate" class="submit-button" />
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/ericasof3" target="_blank">Érica Lemos</a>
+        and is
+        <a
+          href="https://github.com/ericasof3/character-name-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub
+        </a>
+        and is
+        <a href="https://character-name-generator.netlify.app/" target="_blank">
+          hosted on Netlify </a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
