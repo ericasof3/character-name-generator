@@ -42,30 +42,13 @@ h2 {
   margin: 0 0 10px 0;
   font-size: 20px;
   font-family: "Cinzel", serif;
-  font-weight: 500;
+  font-weight: 600;
+  color: #967beb;
 }
 
 .tips {
   font-size: 14px;
   margin: 30px 0;
-}
-
-.tips-list {
-  margin-top: 14px;
-}
-
-.tips ul {
-  margin: 10px 0 0 0;
-  padding-left: 20px;
-}
-
-.tips li {
-  margin-bottom: 8px;
-}
-
-.examples {
-  opacity: 70%;
-  font-size: 13px;
 }
 
 .chat-form-wrapper {
@@ -74,12 +57,60 @@ h2 {
 
 .chat {
   width: 100%;
-  height: 200px;
+  min-height: 300px;
   padding: 16px;
   border: 1px solid #656787;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
   background-color: #26212b;
+}
+
+.message {
+  display: flex;
+  margin: 12px 0;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.assistant {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 90%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  line-height: 1.5;
+  word-break: break-word;
+  font-size: 14px;
+}
+
+.bubble p {
+  margin: 0;
+}
+
+.user .bubble {
+  background-color: #947ded;
+  color: #f3efff;
+}
+
+.assistant .bubble {
+  background-color: #3a3444;
+  color: #f3efff;
+  border: 1px solid #656787;
+}
+
+.example .bubble {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.character-name {
+  color: #d9ccff;
+  display: block;
+  margin-bottom: 4px;
 }
 
 form {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:wght@400;500&display=swap"
@@ -22,40 +23,26 @@
         <h2>Describe your character</h2>
 
         <div class="tips">
-          <div>
-            Provide any information you have about your character so the name
-            can better match them.
-            <br />
-            This might include their gender (if any), personality, the time
-            period they live in, their cultural background, profession, or role
-            in the story.
-          </div>
-
-          <div class="tips-list">You can also specify:</div>
-
-          <ul>
-            <li>A culture or region the name should draw inspiration from</li>
-
-            <li>
-              Themes or elements you want reflected in the name
-              <span class="examples"
-                >(for example: nature, mythology, history, or symbolism)</span
-              >
-            </li>
-
-            <li>
-              Name format preferences
-              <span class="examples"
-                >(such as preferred length—short, medium, long, or a specific
-                number of letters/syllables—and whether to include or avoid
-                special characters like accents, apostrophes, or hyphens)</span
-              >
-            </li>
-          </ul>
+          Provide any information you have about your character so the name can
+          better match them.
+          <br />
+          This might include their gender (if any), personality, the time period
+          they live in, their cultural background, profession, role in the
+          story, or themes/elements you want reflected in the name.
         </div>
 
         <div class="chat-form-wrapper">
-          <div class="chat"></div>
+          <div class="chat" id="character-name">
+            <div class="message assistant example">
+              <div class="bubble">
+                Example: A non-binary healer living in an ancient desert
+                kingdom, with a calm but mysterious personality; from a North
+                African-inspired cultural background; serves as a spiritual
+                guide in the story; and should have a name that feels soft,
+                wise, and connected to the moon and sand.
+              </div>
+            </div>
+          </div>
 
           <form id="character-name-generator-form">
             <div class="form-container">
@@ -65,6 +52,7 @@
                 required
                 autocomplete="off"
                 class="instructions"
+                id="user-instructions"
               />
 
               <input type="submit" value="Generate" class="submit-button" />
